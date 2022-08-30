@@ -1,0 +1,39 @@
+// container
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// section
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__title {
+  margin-bottom: 50px;
+	text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+
+  color: $color-title;
+}
+
+.section__title--visually-hidden {
+  @extend %visually-hidden;
+}
+
+.section--no-padding-top {
+  padding-top: 0;
+}
+
+.section--alternative-bg {
+  background-color: $bc;
+}
+

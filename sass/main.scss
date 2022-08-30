@@ -1,0 +1,41 @@
+// Utilit
+@import "./utils/variables";
+@import "./utils/reset";
+@import "./utils/basic";
+@import "./utils/placeholders";
+
+// Headre
+@import "./components/base/header";
+@import "./components/base/header-nav";
+@import "./components/base/header-contacts";
+
+// Hero
+@import "./components/studio/hero";
+
+// Benefits
+@import "./components/studio/benefits";
+
+// Services
+@import "./components/studio/services";
+
+// Team
+@import "./components/studio/team";
+
+// Clients
+@import "./components/studio/clients";
+
+// Footer
+@import "./components/base/footer";
+@import "./components/base/footer-group-contacts";
+@import "./components/base/footer-group-socials";
+@import "./components/base/footer-group-subscription";
+
+// Portfolio
+// Filter
+@import "./components/portfolio/filter";
+
+// Works
+@import "./components/portfolio/works";
+
+// Modal-window
+@import "./components/studio/modal-window";
