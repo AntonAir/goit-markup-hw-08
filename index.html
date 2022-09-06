@@ -26,51 +26,100 @@
 	<body>
 		<!-- header -->
 		<header class="header">
-			<div class="container header__container">
-				<!-- nav -->
-				<nav class="nav">
+			<div class="container">
+				<div class="header__container">
 					<a class="logo nav__logo" href="./index.html" lang="en">
 						Web<span class="logo__studio">Studio</span>
 					</a>
-					<ul class="nav__list">
-						<li class="nav__item">
-							<a class="nav__link nav__link--indicator" href="./index.html">Студія</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link" href="./portfolio.html">Портфоліо</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link" href="">Контакти</a>
-						</li>
-					</ul>
-				</nav>
-				<!-- contacts -->
-				<ul class="contacts">
-					<li class="contacts__item">
-						<a class="contacts__link" href="mailto:info@devstudio.com">
-							<svg class="contacts__icon" width="16" height="12">
-								<use href="./images/symbol-defs.svg#icon-header-mail"></use>
-							</svg>
-							info@devstudio.com
-						</a>
-					</li>
-					<li class="contacts__item">
-						<a class="contacts__link" href="tel:+380961111111">
-							<svg class="contacts__icon" width="10" height="16">
-								<use href="./images/symbol-defs.svg#icon-header-phone"></use>
-							</svg>
-							+38 096 111 11 11
-						</a>
-					</li>
-				</ul>
+					<button class="menu-btn" data-menu-open type="button" aria-label="кнопка відкриття меню">
+						<svg width="40px" height="40px">
+							<use class="menu-btn__open" href="./images/symbol-defs.svg#icon-menu-mobile"></use>
+						</svg>
+					</button>
+					<nav class="nav">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a class="nav__link nav__link--indicator" href="./index.html">Студія</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__link" href="./portfolio.html">Портфоліо</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__link" href="">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+						<ul class="contacts">
+							<li class="contacts__item">
+								<a class="contacts__link" href="mailto:info@devstudio.com">
+									<svg class="contacts__icon" width="16" height="12">
+										<use href="./images/symbol-defs.svg#icon-header-mail"></use>
+									</svg>
+									info@devstudio.com
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a class="contacts__link" href="tel:+380961111111">
+									<svg class="contacts__icon" width="10" height="16">
+										<use href="./images/symbol-defs.svg#icon-header-phone"></use>
+									</svg>
+									+38 096 111 11 11
+								</a>
+							</li>
+						</ul>
+				</div>
+				<div class="mobile-menu is-hidden" data-menu>
+					<button class="menu-btn-close" data-menu-close type="button">
+						<svg class="menu-btn-close__icon" width="40px" height="40px">
+							<use href="./images/symbol-defs.svg#icon-menu-mobile-close"></use>
+						</svg>
+					</button>
+					<nav class="mobile-nav">
+						<ul class="mobile-nav__list">
+							<li class="mobile-nav__item">
+								<a class="mobile-nav__link" href="./index.html">Студія</a>
+							</li>
+							<li class="mobile-nav__item">
+								<a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a>
+							</li>
+							<li class="mobile-nav__item">
+								<a class="mobile-nav__link" href="">Контакти</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="mobile-menu__bottom">
+						<ul class="mobile-contacts">
+							<li class="mobile-contacts__item">
+								<a class="mobile-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+							</li>
+							<li class="mobile-contacts__item">
+								<a class="mobile-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+							</li>
+						</ul>
+						<ul class="mobile-socials">
+							<li class="mobile-socials__item">
+								<a class="mobile-socials__link" href="">Instagram</a>
+							</li>
+							<li class="mobile-socials__item">
+								<a class="mobile-socials__link" href="">Twitter</a>
+							</li>
+							<li class="mobile-socials__item">
+								<a class="mobile-socials__link" href="">Facebook</a>
+							</li>
+							<li class="mobile-socials__item">
+								<a class="mobile-socials__link" href="">LinkedIn</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</header>
 
 		<!-- main -->
 		<main class="main">
 			<!-- hero -->
-			<section class="hero">
-				<div class="container">
+			<!-- <section class="hero">
+				<div class="container hero__container">
 					<h1 class="hero__title">
 						Ефективні рішення для
 						<br />
@@ -78,13 +127,13 @@
 					</h1>
 					<button class="hero__btn" type="button" data-modal-open>Замовити послугу</button>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- benefits -->
-			<section class="section">
+			<!-- <section class="section">
 				<div class="container">
 					<h2 class="section__title section__title--visually-hidden">Наші переваги</h2>
-					<ul class="benefits">
+					<ul class="benefits section__benefits">
 						<li class="benefits__item">
 							<div class="benefits__icon">
 								<svg width="70px" height="70px">
@@ -123,10 +172,10 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- services -->
-			<section class="section section--no-padding-top">
+			<!-- <section class="section section--no-padding-top">
 				<div class="container">
 					<h2 class="section__title">Чим ми займаємося</h2>
 					<ul class="servise">
@@ -159,10 +208,10 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- team -->
-			<section class="section section--alternative-bg">
+			<!-- <section class="section section--alternative-bg">
 				<div class="container">
 					<h2 class="section__title">Наша команда</h2>
 					<ul class="team">
@@ -340,10 +389,10 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- clients -->
-			<section class="section">
+			<!-- <section class="section">
 				<div class="container">
 					<h2 class="section__title">Постійні клієнти</h2>
 					<ul class="clients">
@@ -391,12 +440,12 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 		</main>
 
 		<!-- footer -->
-		<footer class="footer">
-			<div class="container">
+		<!-- <footer class="footer section">
+			<div class="container footer__container">
 				<div class="group-contacts">
 					<a class="logo footer__logo" href="./index.html" lang="en">
 						Web<span class="logo__studio logo__studio--white">Studio</span>
@@ -424,31 +473,31 @@
 				</div>
 				<div class="group-socials">
 					<strong class="group-socials__call">приєднуйтесь</strong>
-					<ul class="group-socials__list">
-						<li class="group-socials__item">
-							<a class="group-socials__link" href="" aria-label="instagram">
-								<svg class="group-socials__icon" width="20px" height="20px">
+					<ul class="socials-list">
+						<li class="socials-list__item">
+							<a class="socials-list__link socials-list__link--dark-bg" href="" aria-label="instagram">
+								<svg class="socials-list__icon socials-list__icon--white-icon" width="20px" height="20px">
 									<use href="./images/symbol-defs.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="group-socials__item">
-							<a class="group-socials__link" href="" aria-label="twitter">
-								<svg class="group-socials__icon" width="20px" height="20px">
+						<li class="socials-list__item">
+							<a class="socials-list__link socials-list__link--dark-bg" href="" aria-label="twitter">
+								<svg class="socials-list__icon socials-list__icon--white-icon" width="20px" height="20px">
 									<use href="./images/symbol-defs.svg#icon-twitter"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="group-socials__item">
-							<a class="group-socials__link" href="" aria-label="facebook">
-								<svg class="group-socials__icon" width="20px" height="20px">
+						<li class="socials-list__item">
+							<a class="socials-list__link socials-list__link--dark-bg" href="" aria-label="facebook">
+								<svg class="socials-list__icon socials-list__icon--white-icon" width="20px" height="20px">
 									<use href="./images/symbol-defs.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="group-socials__item">
-							<a class="group-socials__link" href="" aria-label="linkedin">
-								<svg class="group-socials__icon" width="20px" height="20px">
+						<li class="socials-list__item">
+							<a class="socials-list__link socials-list__link--dark-bg" href="" aria-label="linkedin">
+								<svg class="socials-list__icon socials-list__icon--white-icon" width="20px" height="20px">
 									<use href="./images/symbol-defs.svg#icon-linkedin"></use>
 								</svg>
 							</a>
@@ -468,10 +517,10 @@
 					</form>
 				</div>
 			</div>
-		</footer>
+		</footer> -->
 
 		<!-- modal window -->
-		<div class="backdrop is-hidden" data-modal>
+		<!-- <div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button class="btn-close" type="button" data-modal-close>
 					<svg class="btn-close__icon" width="18px" height="18px">
@@ -525,8 +574,9 @@
 					<button class="modal__button" type="submit">Відправити</button>
 				</form>
 			</div>
-		</div>
+		</div> -->
 
 		<script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>

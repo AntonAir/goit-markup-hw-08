@@ -1,13 +1,16 @@
 // Utilit
 @import "./utils/variables";
 @import "./utils/reset";
+@import "./utils/mixins";
 @import "./utils/basic";
 @import "./utils/placeholders";
 
 // Headre
-@import "./components/base/header";
-@import "./components/base/header-nav";
-@import "./components/base/header-contacts";
+@import "./components/header/header";
+@import "./components/base/logo";
+@import "./components/header/header-nav";
+@import "./components/header/header-contacts";
+@import "./components/header/mobile-menu";
 
 // Hero
 @import "./components/studio/hero";
@@ -25,10 +28,10 @@
 @import "./components/studio/clients";
 
 // Footer
-@import "./components/base/footer";
-@import "./components/base/footer-group-contacts";
-@import "./components/base/footer-group-socials";
-@import "./components/base/footer-group-subscription";
+@import "./components/footer/footer";
+@import "./components/footer/footer-group-contacts";
+@import "./components/footer/footer-group-socials";
+@import "./components/footer/footer-group-subscription";
 
 // Portfolio
 // Filter

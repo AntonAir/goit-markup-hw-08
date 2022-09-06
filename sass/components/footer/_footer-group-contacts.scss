@@ -1,0 +1,23 @@
+.group-contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 60px;
+
+}
+.footer__logo {
+	margin-bottom: 20px;
+}
+.group-contacts__list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.group-contacts__item {
+	margin-bottom: 8px;
+}
+.group-contacts__link {
+	font-style: normal;
+	line-height: 1.71;
+	color: rgba(255, 255, 255, 0.6);
+}
