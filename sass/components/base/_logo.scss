@@ -8,12 +8,17 @@
 	line-height: 1.17;
 
 	color: $color-accent;
+
+	@include tablet {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 }
 
 .logo__studio {
-    color: $color-title;
-  }
+	color: $color-title;
+}
 
 .logo__studio--white {
-  color: #FFFFFF;
+	color: #ffffff;
 }

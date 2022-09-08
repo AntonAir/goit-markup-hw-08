@@ -1,0 +1,19 @@
+
+.servise {
+  display: flex;
+  gap: 30px;
+}
+.servise__item {
+  position: relative;
+  width: calc((100% - 60px) / 3)
+}
+.servise__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100px;
+  height: 70px;
+
+  text-align: center;
+}

@@ -6,8 +6,14 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
+
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
 
 	@include tablet {
+		width: 768px;
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: flex-start;
@@ -15,6 +21,6 @@
 	}
 
   @include desktop {
-    align-items: baseline;
+		width: 1200px;
   }
 }

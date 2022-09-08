@@ -7,6 +7,11 @@
   @include tablet {
     margin-left: 165px;
   }
+
+  @include desktop {
+    margin-bottom: 0;
+    margin-left: 70px;
+  }
 }
 .group-socials__call {
   margin-bottom: 20px;

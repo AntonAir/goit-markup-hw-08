@@ -5,9 +5,14 @@
 @import "./utils/basic";
 @import "./utils/placeholders";
 
+//base
+
+@import "./components/base/logo";
+@import "./components/base/backdrop";
+
+
 // Headre
 @import "./components/header/header";
-@import "./components/base/logo";
 @import "./components/header/header-nav";
 @import "./components/header/header-contacts";
 @import "./components/header/mobile-menu";
