@@ -711,19 +711,19 @@ button {
   line-height: 1.71;
 }
 
-.servise {
+.service {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
 
-.servise__item {
+.service__item {
   position: relative;
   width: calc((100% - 60px) / 3);
 }
 
-.servise__text {
+.service__text {
   position: absolute;
   left: 0;
   bottom: 0;
