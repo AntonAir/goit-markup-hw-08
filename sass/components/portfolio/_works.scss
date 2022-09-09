@@ -10,11 +10,11 @@
   flex-basis: 100%;
   
   @include tablet {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 
   @include desktop {
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 
@@ -75,6 +75,7 @@
 	border-left: 1px solid #eeeeee;
 }
 .works__subtitle {
+	margin-bottom: 4px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;

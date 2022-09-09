@@ -2,9 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 60px;
-	width: auto;
-
+	
 	@include desktop {
 		margin-bottom: 0;
 		align-items: start;
@@ -13,6 +11,8 @@
 }
 .footer__logo {
 	margin-bottom: 20px;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 .group-contacts__list {
 	display: flex;

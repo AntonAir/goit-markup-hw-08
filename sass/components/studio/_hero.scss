@@ -5,12 +5,17 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	padding-top: 118px;
+	padding-bottom: 118px;
+	text-align: center;
 	@include retina {
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 			url(../images/studio/hero/hero-mob-x2.jpg);
 	}
 
 	@include tablet {
+		padding-top: 118px;
+		padding-bottom: 118px;
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 			url(../images/studio/hero/hero-tab.jpg);
 		@include retina {
@@ -20,28 +25,14 @@
 	}
 
 	@include desktop {
+		padding-top: 200px;
+		padding-bottom: 200px;
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 			url(../images/studio/hero/hero-desc.jpg);
 		@include retina{
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 				url(../images/studio/hero/hero-desc-x2.jpg);
 		}
-	}
-}
-
-.hero__container {
-	padding-top: 118px;
-	padding-bottom: 118px;
-	text-align: center;
-
-	@include tablet {
-		padding-top: 118px;
-		padding-bottom: 118px;
-	}
-
-	@include desktop {
-		padding-top: 200px;
-		padding-bottom: 200px;
 	}
 }
 

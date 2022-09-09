@@ -70,8 +70,16 @@
 	}
 }
 
+.mobile-nav__indicator {
+	color: $color-accent;
+}
+
 .mobile-contacts {
-	margin-bottom: 64px;
+	margin-bottom: 34px;
+
+	@include mobile {
+		margin-bottom: 64px;
+	}
 }
 
 .mobile-contacts__item {
@@ -100,6 +108,16 @@
 			font-size: 34px;
 			color: $color-accent;
 		}
+	}
+}
+
+.mobile-contacts__link--blue {
+	color: $color-accent;
+	font-size: 24px;
+	line-height: 1.18;
+
+	@include mobile {
+		font-size: 34px;
 	}
 }
 
