@@ -11,15 +11,15 @@
 }
 
 .benefits__item {
-	width: 100%;
+	flex-basis: 100%;
 
 	@include tablet {
-		width: 354px;
+		flex-basis: calc((100% - 30px) / 2);
 	}
 
-  @include desktop {
-    width: 270px;
-  }
+	@include desktop {
+		flex-basis: calc((100% - 90px) / 4);
+	}
 }
 
 .benefits__icon {

@@ -43,13 +43,6 @@
 	}
 }
 
-.section--footer {
-	@include desktop {
-		padding-top: 60px;
-		padding-bottom: 60px;
-	}
-}
-
 .section--alternative-bg {
 	background-color: $bc;
 }
